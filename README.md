@@ -24,6 +24,8 @@ model = load_model('caminho/para/seu/modelo.h5', compile=False)
 encoder_model = Model(inputs=model.input[0], outputs=model.get_layer('encoder_outputs').output)
 decoder_model = ... # Configurar o decoder para inferência```
 
+
+
 ## Opção 2: Continuar o treinamento
 ```from tensorflow.keras.models import load_model
 
